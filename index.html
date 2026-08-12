@@ -66,10 +66,36 @@ footer{text-align:center;padding:45px 20px;border-top:1px solid #222;color:#555;
 footer b{color:var(--gold)}
 @media(max-width:850px){nav{display:none}.levels{grid-template-columns:1fr 1fr}.tools{grid-template-columns:1fr}}
 @media(max-width:550px){section{padding:80px 18px}h1{font-size:55px;letter-spacing:10px;margin-left:10px}.hero-title{font-size:39px!important}.lead{font-size:16px}.compare{grid-template-columns:1fr}.levels{grid-template-columns:1fr}.form{padding:28px 20px}}
+.you-symbol{
+  width:72px;
+  height:72px;
+  margin:0 auto 28px;
+  position:relative;
+  transform:rotate(45deg);
+}
+
+.you-symbol::before{
+  content:"";
+  position:absolute;
+  inset:5px;
+  border:1px solid #d7b35d;
+  transform:rotate(45deg);
+  box-shadow:0 0 22px rgba(215,179,93,.12);
+}
+
+.you-symbol::after{
+  content:"";
+  position:absolute;
+  width:38px;
+  height:38px;
+  left:17px;
+  top:17px;
+  border:1px solid #f3d98d;
+  transform:rotate(45deg);
+}
 </style>
 </head>
 <body>
-
 <header>
 <div class="nav">
 <div class="logo">YOUV</div>
@@ -84,6 +110,7 @@ footer b{color:var(--gold)}
 
 <section class="hero">
 <div class="hero-inner">
+<div class="you symbol"></div>
 <div class="kicker">YOU VICTORY</div>
 <h1>YOUV</h1>
 <h2>SUCCESS THROUGH PLAY</h2>
